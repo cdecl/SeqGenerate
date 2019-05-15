@@ -27,9 +27,18 @@ int main(int argc, char const *argv[])
 				for (auto &c3 : code) {
 					for (auto &c4 : code) {
 						for (auto &c5 : code) {
-							string s = ""s + c1 + c2 + c3 + c4 + c5;
-							oss << s << "\n";
 
+#ifdef _WIN32
+							string s;
+							s += c1; 
+							s += c2;
+							s += c3;
+							s += c4;
+							s += c5;
+							oss << s << "\n";
+#else
+							oss << c1 << c2 << c3 << c4 << c5 << "\n";
+#endif
 							if (!(n % 1000)) {
 								fout << oss.str() << flush;
 								oss.str("");
