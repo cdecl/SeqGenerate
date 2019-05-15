@@ -18,7 +18,8 @@ class Main {
 						for (char c4 : code) {
 							for (char c5 : code) {
 								String s = String.format("%c%c%c%c%c", c1, c2, c3, c4, c5);
-								bw.write(s + "\n");
+								bw.write(s);
+								bw.newLine();
 								// bw.flush();
 							}
 						}
