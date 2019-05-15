@@ -17,6 +17,7 @@ int main(int argc, char const *argv[])
 	clock_t start = clock();
 
 	{
+		char sz[128];
 		stringstream oss;
 		int n = 0;
 
@@ -27,18 +28,14 @@ int main(int argc, char const *argv[])
 				for (auto &c3 : code) {
 					for (auto &c4 : code) {
 						for (auto &c5 : code) {
+							sz[0] = c1;
+							sz[1] = c2;
+							sz[2] = c3;
+							sz[3] = c4;
+							sz[4] = c5;
+							sz[5] = '\0';
+							oss << sz << "\n";
 
-#ifdef _WIN32
-							string s;
-							s += c1; 
-							s += c2;
-							s += c3;
-							s += c4;
-							s += c5;
-							oss << s << "\n";
-#else
-							oss << c1 << c2 << c3 << c4 << c5 << "\n";
-#endif
 							if (!(n % 1000)) {
 								fout << oss.str() << flush;
 								oss.str("");
