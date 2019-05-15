@@ -30,7 +30,7 @@ namespace netcon
 			}
 
 			sw.Stop();
-			Console.WriteLine((sw.ElapsedMilliseconds / 1000.0).ToString() + " sec");
+			Console.WriteLine("c# : " + (sw.ElapsedMilliseconds / 1000.0).ToString() + " sec");
 		} 
 	}
 }

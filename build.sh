@@ -6,6 +6,6 @@ cd ../dotnetcore
 dotnet build -c Release
 
 cd ../java
-javac Main.java
+make
 
 cd ..

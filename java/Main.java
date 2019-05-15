@@ -27,7 +27,7 @@ class Main {
 			}
 			
 			long end = System.currentTimeMillis();
-			System.out.println(( end - start ) / 1000.0 + " sec");
+			System.out.println("java : " + ( end - start ) / 1000.0 + " sec");
 		}
 		catch (Exception ex) {
 			ex.printStackTrace();	

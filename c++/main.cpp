@@ -30,7 +30,7 @@ int main(int argc, char const *argv[])
 							string s = ""s + c1 + c2 + c3 + c4 + c5;
 							oss << s << "\n";
 
-							if (!(n % 8000)) {
+							if (!(n % 1000)) {
 								fout << oss.str() << flush;
 								oss.str("");
 								n = 0;
@@ -45,9 +45,9 @@ int main(int argc, char const *argv[])
 	}
 
 	clock_t end = clock();
-	long duration = (end - start) ;
-	// double duration = (double)(end - start) / CLOCKS_PER_SEC;
-	cout << duration / 1000.0 << " sec" << endl;
+	// long duration = (end - start) ;
+	double duration = (double)(end - start) / CLOCKS_PER_SEC;
+	cout << "c++ : " << duration << " sec" << endl;
 			
 	return 0;
 }
