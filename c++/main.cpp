@@ -48,7 +48,7 @@ int main(int argc, char const *argv[])
 				}
 			}
 		}
-		fout << oss.str() << flush;
+		fout << oss.rdbuf();
 	}
 
 	clock_t end = clock();
