@@ -11,33 +11,19 @@
 ```bash
 # Centos 7
 $ run.sh   
-c++ : 8.95 sec
-c# : 10.202 sec                               
-java : 129.186 sec                             
-python :  47.36 sec    
-
-# Tuning : String → char[]
-$ run.sh   
-c++ : 4.49 sec
-c# : 3.234 sec
-java : 6.021 sec
-python :  47.36 sec    
+c++ : 1.75 sec
+c# : 2.715 sec
+java : 5.399 sec
+python : 30.19 sec  
 ```
 
 ```bat
 REM Windwos 10
 $ run.bat
-c++ : 7.853 sec
-c# : 8.995 sec 
-java : 131.091 sec
-python :  78.81 sec     
-
-REM Tuning : String → char[]
-$ run.bat
-c++ : 5.889 sec
-c# : 3.476 sec
-java : 6.842 sec
-python :  78.81 sec     
+c++ : 4.409 sec
+c# : 4.397 sec
+java : 5.612 sec
+python : 51.31 sec   
 ```
 
 ```bat
