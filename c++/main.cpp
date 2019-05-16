@@ -33,11 +33,12 @@ int main(int argc, char const *argv[])
 							sz[2] = c3;
 							sz[3] = c4;
 							sz[4] = c5;
-							sz[5] = '\0';
-							oss << sz << "\n";
+							sz[5] = '\n';
+							sz[6] = '\0';
+							oss.write(sz, 6);
 
-							if (!(n % 1000)) {
-								fout << oss.str() << flush;
+							if (!(n % 4096)) {
+								fout << oss.rdbuf();
 								oss.str("");
 								n = 0;
 							}
