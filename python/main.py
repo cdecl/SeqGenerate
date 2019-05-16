@@ -16,7 +16,7 @@ def main():
 							fout.write(s + '\n')
 						
 	tm = time.time() - start
-	print("python : ", round(tm, 2), "sec")
+	print("python : " + str(round(tm, 2)) + " sec")
 
 if __name__ == "__main__":
 	main()
