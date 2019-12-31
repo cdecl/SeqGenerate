@@ -2,6 +2,8 @@
 rm -f *.txt
 
 c++\main
-dotnet dotnetcore\bin\Release\netcoreapp2.2\netcon.dll
+dotnet dotnetcore\bin\Release\netcoreapp3.1\netcon.dll
+golang\bin\main.exe
 java -cp java Main
-python python\main.py
+
+REM python python\main.py
