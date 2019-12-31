@@ -3,6 +3,7 @@
 ### 개발환경 
 - c++ : mingw (8.1), g++ (8.2)
 - .net core 2.2
+- go : go1.13.5 windows/amd64
 - java : JDK 8
 - python : >= 3.6 
 
@@ -20,9 +21,10 @@ python : 30.19 sec
 ```bat
 REM Windwos 10
 $ run.bat
-c++ : 4.409 sec
-c# : 4.397 sec
-java : 5.612 sec
+c++ : 3.618 sec
+c# : 3.511 sec
+go : 3.399000 sec
+java : 5.124 sec
 python : 51.31 sec   
 ```
 
@@ -30,9 +32,9 @@ python : 51.31 sec
 $ wc -l *.txt
   60466176 seq-c++.txt
   60466176 seq-cs.txt
+  60466176 seq-go.txt
   60466176 seq-java.txt
-  60466176 seq-python.txt
- 241864704 합계
+ 241864704 total
 ```
 
 ### # Tuning Point
