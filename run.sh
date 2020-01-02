@@ -2,7 +2,16 @@
 
 rm -f *.txt
 
+sleep 1
 c++/main
-dotnet dotnetcore/bin/Release/netcoreapp2.2/netcon.dll
+
+sleep 1
+dotnet dotnetcore/bin/Release/netcoreapp3.1/netcon.dll
+
+sleep 1
+golang/bin/main.exe 
+
+sleep 1
 java -cp java Main
-python python/main.py
+
+# python python/main.py
