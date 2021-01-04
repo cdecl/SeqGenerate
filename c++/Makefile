@@ -1,5 +1,5 @@
 CC = g++
-CC_FLAGS = -std=c++14 -pedantic -Wall -O2 
+CC_FLAGS = -std=c++14 -pedantic -Wall -O2 -Ifmt/include
 LD_LIBS = 
 
 EXEC = main

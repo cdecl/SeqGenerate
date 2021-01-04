@@ -1,5 +1,5 @@
 
-cd c++
+cd ./c++
 make 
 
 cd ../dotnetcore
